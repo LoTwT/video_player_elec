@@ -29,6 +29,13 @@ const createWindow = () => {
                         if (!canceled) mainWindow.webContents.send("openFile", filePaths)
                     },
                     accelerator: "ctrl+o"
+                },
+                {
+                    label: "reload",
+                    click() {
+                        mainWindow.reload()
+                    },
+                    accelerator: "ctrl+r"
                 }
             ]
         }
