@@ -3,7 +3,7 @@ const path = require('path');
 const { showOpenDialog } = require("./dialog")
 
 const preload = path.resolve(__dirname, "../preload/preload")
-// const html = path.resolve(__dirname, "../web/index.html")
+const html = path.resolve(__dirname, "../web/index.html")
 
 if (require('electron-squirrel-startup')) {
     app.quit();
